@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "planetb" ;
+    src: url(font/PLANB___.TTF);
+}
+
+@font-face {
+    font-family: "plank" ;
+    src: url(font/PLANK___.TTF);
+}
+
+@font-face {
+    font-family: "acidic";
+    src: url(font/Acidic.TTF);
+}
+
+@font-face {
+    font-family: "ss41" ;
+    src: url(font/SS41.ttf);
+}
+
+
+/*------------CSS---*/
+
+li{
+    display: inline;
+    padding-right: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+button {
+    width: 150px;
+    font-family: "planetb";
+    font-size: 20px;
+    background-color: rgb(255, 47, 210);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+
+body{
+    margin: 5%;
+    padding: 5%;
+    display: flex;
+    background-color: black;
+}
+
+.Site{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+    margin: auto;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-shadow: 12px 12px 2px 2px;
+    padding-top: 40px;
+}
+.Hero-image{
+    background-image:url("images/hero.png");
+    height: 500px;
+    width: 100%;
+    background-position: center;
+}
+#rockstar-by-night{
+    color:rgb(255, 47, 210);
+    font-size: 35px;
+    
+}
+
+.wrapper{
+    font-family: "acidic";
+}
+
+html{
+    font-family: sans-serif;
+}
+
+#about-image{
+height: 500px;    
+object-fit: contain ;
+}
+
+h1{
+font-family: "plank";
+font-size: 35px;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: rgb(255, 47, 210);
+}
+
+#about{
+    font-family: "acidic";
+    color:chartreuse;
+}
+
+/*-------------GALLERY----------------------*/
+.Gallery-Grid{
+    display: grid;
+    background-color: rgb(28, 207, 198);
+    grid-template-columns: 4fr 12fr 8fr 8fr 20fr;
+    grid-template-rows: 300px 100px;
+    width: 100%;
+    height: 830px;
+    margin: 1%;
+    border: 5px solid rgb(28, 207, 198);
+    border-style: groove;
+}
+.Gallery-Grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+.Gallery-Grid div{
+    margin:10px;
+    background-color: rgb(255, 255, 255);
+   background-size: contain;
+}
+
+#neon-angel {
+    grid-column: 5 / span 1;
+    grid-row: 2 / span 2;
+}
+#Mistress-apex{
+    grid-column: 2 /span 3;
+    grid-row: 2 / span 2;
+}
+#resthaven{
+    grid-column: 1 /span 3;
+    grid-row: 2 / span 2;
+    object-position: 63% 25%;
+}
+#anakra{
+    grid-column: 3 /span 2;
+}
+
+
+
+.footer{
+    flex-direction: row;
+    display: flex;
+    font-size: xx-small;
+    color: white;
+    margin-top: 140px;
+    justify-content: center;
+}
